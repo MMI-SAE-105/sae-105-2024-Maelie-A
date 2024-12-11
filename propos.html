@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>À propos - Lionimation Festival</title>
-    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/style.css" />
   </head>
   <link
     rel="icon"
@@ -12,28 +12,28 @@
     href="assets/favicons/android-chrome-192x192.png"
     sizes="192x192"
   />
-
   <body>
     <header class="header">
-      <div class="logo">
-        <h1>Lionimation <span>festival</span></h1>
-        <img src="assets/img/logoa.webp" alt="Lionimation logo" />
+      <div class="header__logo">
+        <h1 class="header__title">
+          Lionimation <span class="header__title--highlight">festival</span>
+        </h1>
+        <img src="assets/img/logoa.webp" alt="Lionimation logo" class="header__logo-image" />
       </div>
-      <nav class="menu">
-        <button class="menu-toggle">☰</button>
+      <nav class="header__menu">
+        <button class="header__menu-toggle">☰</button>
       </nav>
     </header>
 
     <main class="main-content">
       <section class="hero">
-        <h2>À Propos</h2>
-        <img src="assets/img/logoa.webp" alt="Lionimation logo" />
-        <h3>Notre mission et nos valeurs.</h3>
+        <h2 class="hero__title">À Propos</h2>
+        <h3 class="hero__subtitle">Notre mission et nos valeurs.</h3>
       </section>
 
       <section class="history">
-        <h2>Histoire du Festival</h2>
-        <p>
+        <h2 class="history__title">Histoire du Festival</h2>
+        <p class="history__description">
           "Créé en 2015, le Lionimation Festival est devenu une référence dans
           l’univers de l’animation. Chaque année, il rassemble créateurs et
           spectateurs autour d’une passion commune : explorer la richesse de
@@ -42,90 +42,128 @@
       </section>
 
       <section class="team">
-        <h2>Organisateurs</h2>
-        <ul>
-          <li>Directeur : Maëlie Addario</li>
-          <li>Programmation : Bryan Menoux</li>
+        <h2 class="team__title">Organisateurs</h2>
+        <ul class="team__list">
+          <li class="team__item">Directeur : Maëlie Addario</li>
+          <li class="team__item">Programmation : Bryan Menoux</li>
         </ul>
 
-        <h2>Équipe technique</h2>
-        <ul>
-          <li>Régisseur : Camille Norrto</li>
-          <li>Techniciens : Alice Frelin, Lison Pruvost et Lorène Chevallot</li>
+        <h2 class="team__title">Équipe technique</h2>
+        <ul class="team__list">
+          <li class="team__item">Régisseur : Camille Norrto</li>
+          <li class="team__item">
+            Techniciens : Alice Frelin, Lison Pruvost et Lorène Chevallot
+          </li>
         </ul>
       </section>
 
       <section class="partners">
-        <h2>Partenaires</h2>
-        <ul>
-          <li>
+        <h2 class="partners__title">Partenaires</h2>
+        <ul class="partners__list">
+          <li class="partners__item">
             Institutions : Ville de Belfort, Région Bourgogne-Franche-Comté
           </li>
-          <li>Culturels : Cinéma Kinépolis</li>
+          <li class="partners__item">Culturels : Cinéma Kinépolis</li>
         </ul>
-        <img src="assets/img/gequipe.webp" alt="Lionimation logo" />
       </section>
 
       <section class="values">
-        <h2>Valeurs Clés</h2>
-        <ul>
-          <li>
-            <strong>Éducation</strong> : Sensibilisation au cinéma d’animation.
+        <h2 class="values__title">Valeurs Clés</h2>
+        <ul class="values__list">
+          <li class="values__item">
+            <strong class="values__highlight">Éducation</strong> :
+            Sensibilisation au cinéma d’animation.
           </li>
-          <li>
-            <strong>Créativité</strong> : Exploration de techniques variées
-            (stop motion, animation 2D/3D).
+          <li class="values__item">
+            <strong class="values__highlight">Créativité</strong> : Exploration
+            de techniques variées (stop motion, animation 2D/3D).
           </li>
-          <li>
-            <strong>Accessibilité</strong> : Ateliers et projections adaptées à
-            tous les publics.
+          <li class="values__item">
+            <strong class="values__highlight">Accessibilité</strong> : Ateliers
+            et projections adaptées à tous les publics.
           </li>
         </ul>
       </section>
 
       <footer class="footer">
-        <link href="footer.css" rel="stylesheet" />
-        <p>Plongez dans l'univers de l'animation à Belfort !</p>
-        <div class="social-media">
-          <p>Suivez-nous :</p>
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="assets/img/instagram.webp" alt="Instagram logo"
-              /></a>
+        <p class="footer__description">
+          Plongez dans l'univers de l'animation à Belfort !
+        </p>
+
+        <div class="footer__social-media">
+          <p class="footer__social-media-title">Suivez-nous :</p>
+          <ul class="footer__social-media-list">
+            <li class="footer__social-media-item">
+              <a href="#" class="footer__social-media-link">
+                <img
+                  src="assets/img/instagram.webp"
+                  alt="Instagram logo"
+                  class="footer__social-media-icon"
+                />
+              </a>
             </li>
-            <li>
-              <a href="#"
-                ><img src="assets/img/facebook.webp" alt="Facebook logo"
-              /></a>
+            <li class="footer__social-media-item">
+              <a href="#" class="footer__social-media-link">
+                <img
+                  src="assets/img/facebook.webp"
+                  alt="Facebook logo"
+                  class="footer__social-media-icon"
+                />
+              </a>
             </li>
-            <li>
-              <a href="#"
-                ><img src="assets/img/tiktok.webp" alt="TikTok logo"
-              /></a>
+            <li class="footer__social-media-item">
+              <a href="#" class="footer__social-media-link">
+                <img
+                  src="assets/img/tiktok.webp"
+                  alt="TikTok logo"
+                  class="footer__social-media-icon"
+                />
+              </a>
+            </li>
+            <li class="footer__social-media-item">
+              <a href="#" class="footer__social-media-link">
+                <img
+                  src="assets/img/youtube.webp"
+                  alt="YouTube logo"
+                  class="footer__social-media-icon"
+                />
+              </a>
             </li>
           </ul>
         </div>
-        <div class="contact-info">
-          <p>Contact :</p>
-          <p>
-            Email :
-            <a href="mailto:lionimation@festival.com"
+
+        <div class="footer__contact-info">
+          <p class="footer__contact-info-title">Contact :</p>
+          <p class="footer__contact-info-item">
+            <a
+              href="mailto:lionimation@festival.com"
+              class="footer__contact-info-link"
               >lionimation@festival.com</a
             >
           </p>
-          <p>Téléphone : <a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
-          <p>
-            Adresse : Lionimation Festival, Place de la République, 90000
-            Belfort, France
+          <p class="footer__contact-info-item">
+            <a href="tel:+33123456789" class="footer__contact-info-link"
+              >+33 1 23 45 67 89</a
+            >
+          </p>
+          <p class="footer__contact-info-item">
+            Lionimation Festival, Place de la République, 90000 Belfort, France
           </p>
         </div>
-        <img src="assets/img/logoa.webp" alt="Lionimation logo" />
-        <p>© 2024 Lionimation Festival - Tous droits réservés</p>
-        <p>
-          <a href="#">[Mentions légales]</a> |
-          <a href="#">[Politique de confidentialité]</a> |
-          <a href="#">[Conditions générales]</a>
+
+        <div class="footer__logo-section">
+          <img
+            src="assets/img/logoa.webp"
+            alt="Lionimation logo"
+            class="footer__logo"
+          />
+        </div>
+
+        <p class="footer__copyright">
+          © 2024 Lionimation Festival - Tous droits réservés
+          <a href="#">Mentions légales</a> |
+          <a href="#">Politique de confidentialité</a> |
+          <a href="#">Conditions générales</a>
         </p>
       </footer>
     </main>
