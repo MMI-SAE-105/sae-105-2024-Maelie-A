@@ -14,9 +14,9 @@
   />
   <body>
     <header class="header">
-      <div class="header__logo">
+      <div class="header__logo-container">
         <h1 class="header__title">
-          Lionimation <span class="header__title--highlight">festival</span>
+          Lionimation <span class="header__title-highlight">festival</span>
         </h1>
         <img
           src="assets/img/logoa.webp"
@@ -24,65 +24,80 @@
           class="header__logo-image"
         />
       </div>
-      <nav class="header__menu">
+      <nav class="header__navigation">
         <button class="header__menu-toggle">☰</button>
       </nav>
     </header>
 
     <main class="main-content">
       <section class="hero">
-        <h2>Programme</h2>
+        <h2 class="hero__title">Programme</h2>
       </section>
 
       <section class="schedule">
-        <h3>Samedi 8 - Animation Numérique</h3>
-        <p>
+        <h3 class="schedule__date">Samedi 8 - Animation Numérique</h3>
+        <p class="schedule__description">
           Plongez dans l'univers moderne de l'animation numérique avec des
           styles excentriques et des récits captivants.
         </p>
 
-        <div class="event">
-          <h4>Films</h4>
-          <div class="movie">
-            <h5>10h00 : Rick et Morty</h5>
-            <p>Sélection des meilleurs épisodes (Adult Swim).</p>
-            <p>
+        <div class="schedule__event">
+          <h4 class="event__title">Films</h4>
+
+          <div class="event__movie">
+            <h5 class="movie__time">10h00 : Rick et Morty</h5>
+            <p class="movie__description">
+              Sélection des meilleurs épisodes (Adult Swim).
+            </p>
+            <p class="movie__location">
               <strong>Lieu :</strong> Cinéma Kinépolis (Projections en salle)
             </p>
-            <img src="assets/img/retm.webp" alt="Rick et Morty" />
+            <img
+              src="assets/img/retm.webp"
+              alt="Rick et Morty"
+              class="movie__image"
+            />
           </div>
 
-          <div class="movie">
-            <h5>14h00 : Adventure Time : Le film</h5>
-            <p>Pendleton Ward, 2020</p>
-            <p>
+          <div class="event__movie">
+            <h5 class="movie__time">14h00 : Adventure Time : Le film</h5>
+            <p class="movie__description">Pendleton Ward, 2020</p>
+            <p class="movie__location">
               <strong>Lieu :</strong> Cinéma Kinépolis (Projections en salle)
             </p>
-            <img src="assets/img/advtime.webp" alt="Adventure Time" />
+            <img
+              src="assets/img/advtime.webp"
+              alt="Adventure Time"
+              class="movie__image"
+            />
           </div>
 
-          <div class="movie">
-            <h5>16h30 : Spider-Man : New Generation</h5>
-            <p>Sony, 2018</p>
-            <p>
+          <div class="event__movie">
+            <h5 class="movie__time">16h30 : Spider-Man : New Generation</h5>
+            <p class="movie__description">Sony, 2018</p>
+            <p class="movie__location">
               <strong>Lieu :</strong> Place d'Armes (Projection en plein air)
             </p>
-            <img src="assets/img/spider.webp" alt="Spider-Man : New Generation" />
+            <img
+              src="assets/img/spider.webp"
+              alt="Spider-Man : New Generation"
+              class="movie__image"
+            />
           </div>
         </div>
 
-        <div class="workshop">
-          <h4>Atelier</h4>
-          <h5>17h00 : Atelier découverte</h5>
-          <p>
+        <div class="schedule__workshop">
+          <h4 class="workshop__title">Atelier</h4>
+          <h5 class="workshop__time">17h00 : Atelier découverte</h5>
+          <p class="workshop__description">
             Découvrez les coulisses de la réalisation de Spider-Man : New
             Generation. Joaquim Dos Santos partagera son processus créatif, ses
             inspirations, et les défis rencontrés pour donner vie à cet univers
             visuel révolutionnaire.
           </p>
-          <div class="cta-buttons">
-            <a href="#" class="button">Réserver vos places !</a>
-            <a href="#" class="button">Enregistrer (PDF)</a>
+          <div class="workshop__cta-buttons">
+            <a href="#" class="button button--primary">Réserver vos places !</a>
+            <a href="#" class="button button--secondary">Enregistrer (PDF)</a>
           </div>
         </div>
       </section>
