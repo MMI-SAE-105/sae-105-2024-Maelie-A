@@ -1,2 +1,27 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #340c44;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.header__title {
+  font-family: "Ultra", serif;
+  color: #ff69b4;
+  font-size: 24px;
+  margin: 0;
+}
+
+.header__logo-image {
+  width: 70px;
+  height: auto;
+}
+
+.header__menu-toggle {
+  font-family: "Ultra", serif;
+  width: 500px;
+  height: auto;
+  color: #ff69b4;
 }

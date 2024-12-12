@@ -1,16 +1,15 @@
-/* Footer Styles */
 .footer {
   background-color: #2d013d;
   color: #fff;
   text-align: center;
   padding: 40px 20px;
-  font-family: "Arial", sans-serif;
 }
 
 .footer__description {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  font-family: "Ultra", serif;
 }
 
 .footer__social-media {
@@ -19,12 +18,14 @@
   align-items: center;
   gap: 30px;
   margin-bottom: 30px;
+  font-family: "Ultra", serif;
 }
 
 .footer__social-media-title {
   font-size: 20px;
   font-weight: bold;
   margin-right: 10px;
+  font-family: "Ultra", serif;
 }
 
 .footer__social-media-list {
@@ -35,11 +36,9 @@
   margin: 0;
 }
 
-.footer__social-media-item {
-}
-
 .footer__social-media-link {
   display: inline-block;
+  font-family: "Ultra", serif;
 }
 
 .footer__social-media-icon {
@@ -51,25 +50,30 @@
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.6;
+  font-family: "Ultra", serif;
 }
 
 .footer__contact-info-title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  font-family: "Ultra", serif;
 }
 
 .footer__contact-info-item {
   margin-bottom: 10px;
+  font-family: "Ultra", serif;
 }
 
 .footer__contact-info-link {
-  color: #ff6ad5;
+  color: #ffffff;
   text-decoration: none;
+  font-family: "Ultra", serif;
 }
 
 .footer__contact-info-link:hover {
   text-decoration: underline;
+  font-family: "Ultra", serif;
 }
 
 .footer__logo {
@@ -79,20 +83,27 @@
 }
 
 .footer__copyright {
+  color: #ffffff;
   font-size: 14px;
   margin-bottom: 10px;
+  font-family: "ABeeZee", sans-serif;
 }
 
 .footer__legal {
+  color: #ffffff;
   font-size: 14px;
+  font-family: "ABeeZee", sans-serif;
 }
 
 .footer__legal-link {
-  color: #ff6ad5;
-  text-decoration: none;
+  color: #ffffff;
+  text-decoration: underline;
   margin: 0 5px;
+  font-family: "ABeeZee", sans-serif;
 }
 
 .footer__legal-link:hover {
+  color: #ffffff;
   text-decoration: underline;
+  font-family: "ABeeZee", sans-serif;
 }

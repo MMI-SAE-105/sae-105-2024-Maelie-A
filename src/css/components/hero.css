@@ -1,1 +1,10 @@
+.hero {
+  text-align: center;
+  padding: 30px 10px;
+}
 
+.hero__title {
+  font-family: "Ultra", serif;
+  color: #ff69b4;
+  font-size: 36px;
+}

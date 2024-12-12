@@ -17,3 +17,6 @@
 /* Components */
 @import "components/menu.css";
 @import "components/hero.css";
+
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Ultra&family=Unbounded:wght@200..900&display=swap");

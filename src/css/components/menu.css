@@ -1,58 +1,97 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #2e003e; /* Couleur violet foncé */
-  color: white;
+  font-family: "Unbounded", sans-serif; 
+}
+
+h1 {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+}
+
+h2 {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+}
+
+h3 {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+}
+
+p {
+  font-family: "Unbounded", sans-serif; /* Utilise la police Unbounded */
+  font-weight: 400; /* Spécifiez un poids (200 à 900) si nécessaire */
+}
+
+          
+/* Menu Principal */
+.menu {
+  background-color: #331137;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  
 }
 
-.header__logo {
-  text-align: center;
-  margin-bottom: 2rem;
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Adds consistent vertical spacing between items */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.header__logo img {
-  width: 150px;
+
+.menu__logo-container {
+  margin-bottom: 40px;
+}
+
+.menu__logo-container img {
+  width: 80px;
   height: auto;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  text-align: center;
+
+
+.menu__item {
+  margin: 10px 0;
 }
 
-.menu a {
+.menu__link {
+  font-family: 'Ultra', serif;
   text-decoration: none;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ff69b4; /* Rose vif pour certains liens */
-  transition: color 0.3s ease-in-out;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ff69b4; /* Couleur par défaut */
+  display: block;
+  transition: color 0.3s ease;
 }
 
-.menu a:nth-child(2) {
-  color: #9acd32; /* Vert vif */
+/* Couleurs spécifiques pour chaque élément */
+.menu__list .menu__item:nth-child(1) .menu__link {
+  color: #ff69b4; /* Rose */
 }
 
-.menu a:nth-child(3) {
-  color: #ffa500; /* Orange vif */
+.menu__list .menu__item:nth-child(2) .menu__link {
+  color: #67E344; /* Vert clair */
 }
 
-.menu a:nth-child(5) {
-  color: #9acd32; /* Vert vif */
+.menu__list .menu__item:nth-child(3) .menu__link {
+  color: #FF914C; /* Orange */
 }
 
-.menu a:nth-child(6) {
-  color: #ffa500; /* Orange vif */
+.menu__list .menu__item:nth-child(4) .menu__link {
+  color: #ff69b4; /* Rose */
 }
 
-.menu a:hover {
-  opacity: 0.8;
+.menu__list .menu__item:nth-child(5) .menu__link {
+  color: #67E344; /* Vert clair */
+}
+
+.menu__list .menu__item:nth-child(6) .menu__link {
+  color: #FF914C; /* Orange */
+}
+
+.menu__link:hover {
   text-decoration: underline;
 }
