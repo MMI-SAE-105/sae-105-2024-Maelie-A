@@ -21,7 +21,7 @@ textarea {
 
 .contact-form__title {
   font-family: "Ultra", serif;
-  color: #4b215f;
+  color: var(--violet-);
   text-align: center;
   font-size: 28px;
 }
@@ -29,14 +29,14 @@ textarea {
 .contact-form__description {
   text-align: center;
   font-size: 16px;
-  color: #6d3f6b;
+  color: var(--violet-);
 }
 
 .contact-form__label {
   display: block;
   margin-top: 20px;
   font-size: 16px;
-  color: #4b215f;
+  color: var(--violet-);
 }
 
 .contact-form__input,
@@ -44,7 +44,7 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
-  border: 2px solid #ffc6e5;
+  border: 2px solid var(--rose-);
   border-radius: 5px;
   font-size: 14px;
 }
@@ -57,14 +57,14 @@ textarea {
 .contact-form__input:focus,
 .contact-form__textarea:focus {
   outline: none;
-  border-color: #4b215f;
+  border-color: var(--violet-);
 }
 
 .contact-form__button {
   width: 100%;
   padding: 10px;
   margin-top: 20px;
-  background-color: #4b215f;
+  background-color: var(--violet-);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -73,11 +73,11 @@ textarea {
 }
 
 .contact-form__button:hover {
-  background-color: #6d3f6b;
+  background-color: var(--violet-)
 }
 
 .footer {
-  background-color: #340c44;
+  background-color: var(--violet-);
   color: #fff;
   padding: 20px;
   text-align: center;
