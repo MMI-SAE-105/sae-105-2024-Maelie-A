@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>À propos - Lionimation Festival</title>
+    <title>Invité - Lionimation Festival</title>
     <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicons/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <script type="module" src="/src/js/script.js"></script>
   </head>
-  <link
-    rel="icon"
-    type="image/png"
-    href="assets/favicons/android-chrome-192x192.png"
-    sizes="192x192"
-  />
   <body>
     <header class="header">
-      <div class="header__logo">
+      <div class="header__logo-container">
         <h1 class="header__title">
           Lionimation <span class="header__title--highlight">festival</span>
         </h1>
@@ -26,8 +27,38 @@
           />
         </a>
       </div>
-      <nav class="header__menu">
-        <a href="menu.html" class="header__menu-toggle">&#9776;</a>
+
+      <button
+        class="header__menu-btn menu-btn"
+        aria-label="menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+        class="menu__link"
+      >
+        <span class="menu-btn__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="menu" id="mainNav" aria-hidden="true">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="propos.html">A propos</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="film.html">Films</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="invite.html">Invités</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="infop.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contactus.html">Contact us</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -72,6 +103,43 @@
           <li class="partners__item">Culturels : Cinéma Kinépolis</li>
         </ul>
       </section>
+      <div class="carousel" aria-labelledby="carousel-heading">
+        <div class="carousel__container" role="region" aria-live="polite">
+          <div class="carousel__item">
+            <img id="img1" src="/assets/img/lorena.webp" alt="Image musique 1" />
+          </div>
+          <div class="carousel__item">
+            <img
+              id="img2"
+              src="/assets/img/cine.webp"
+              alt="Image musique 2"
+            />
+          </div>
+          <div class="carousel__item">
+            <img id="img3" src="/assets/img/cinek.webp" alt="Image musique 3" />
+          </div>
+        </div>
+        <div class="carousel__controls">
+          <button
+            class="carousel__button carousel__button--prev"
+            aria-label="DÃ©filer vers la gauche"
+          >
+            <img
+              src="/assets/favicons/icon_arrowcarrousel.svg"
+              alt="fleche gauche"
+            />
+          </button>
+          <button
+            class="carousel__button carousel__button--next"
+            aria-label="DÃ©filer vers la droite"
+          >
+            <img
+              src="/assets/favicons/icon_arrowcarrousel.svg"
+              alt="fleche droite"
+            />
+          </button>
+        </div>
+      </div>
 
       <section class="values">
         <h2 class="values__title">Valeurs Clés</h2>

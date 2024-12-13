@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programme - Lionimation Festival</title>
+    <title>Invité - Lionimation Festival</title>
     <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicons/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <script type="module" src="/src/js/script.js"></script>
   </head>
-  <link
-    rel="icon"
-    type="image/png"
-    href="assets/favicons/android-chrome-192x192.png"
-    sizes="192x192"
-  />
   <body>
     <header class="header">
       <div class="header__logo-container">
         <h1 class="header__title">
-          Lionimation <span class="header__title-highlight">festival</span>
+          Lionimation <span class="header__title--highlight">festival</span>
         </h1>
-    <a href="index.html">
+        <a href="index.html">
           <img
             src="assets/img/logoa.webp"
             alt="Lionimation logo"
@@ -26,8 +27,38 @@
           />
         </a>
       </div>
-      <nav class="header__navigation">
-         <a href="menu.html" class="header__menu-toggle">&#9776;</a>
+
+      <button
+        class="header__menu-btn menu-btn"
+        aria-label="menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+        class="menu__link"
+      >
+        <span class="menu-btn__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="menu" id="mainNav" aria-hidden="true">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="propos.html">A propos</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="film.html">Films</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="invite.html">Invités</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="infop.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contactus.html">Contact us</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
