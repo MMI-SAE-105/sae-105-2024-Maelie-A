@@ -73,7 +73,7 @@ textarea {
 }
 
 .contact-form__button:hover {
-  background-color: var(--violet-)
+  background-color: var(--violet-);
 }
 
 .footer {
@@ -82,4 +82,56 @@ textarea {
   padding: 20px;
   text-align: center;
   font-size: 14px;
+  
+}
+
+
+
+
+h2.hero__title {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--rose-);
+}
+
+p.films-intro__description {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--orange-);
+  text-align: center;
+  font-size: 32px;
+}
+
+h3.film__title {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--violet-);
+  font-size: 20px;
+  text-align: center;
+}
+
+h2.accroche__title {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--violet-);
+  font-size: 32px;
+  text-align: center;
+}
+
+
+h2.date__title {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  text-align: left;
+  color: var(--rose-);
+  font-size: 32px;
+}
+
+h3.schedule__date__web-inspector-hide-shortcut__ {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--violet-);
+  font-size: 40px;
+  text-align: center;
+}
+
+h3.schedule__date__ {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--violet-);
+  font-size: 20px;
+  text-align: center;
 }
