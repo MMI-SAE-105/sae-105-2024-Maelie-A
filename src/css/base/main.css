@@ -72,6 +72,50 @@ textarea {
   cursor: pointer;
 }
 
+.boutonpic__b {
+  width: auto;
+  padding: auto;
+  margin-top: 20px;
+  color: white;
+  background-color: var(--violet-);
+  border: none;
+  border-radius: auto;
+  font-size: auto;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.boutonpic__b2 {
+  width: auto;
+  padding: auto;
+  margin-top: 20px;
+  color: white;
+  background-color: var(--violet-);
+  border: none;
+  border-radius: auto;
+  font-size: auto;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.boutonpic__b3 {
+  width: auto;
+  padding: auto;
+  margin-top: 20px;
+  color: white;
+  background-color: var(--violet-);
+  border: none;
+  border-radius: auto;
+  font-size: auto;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+
+
 .contact-form__button:hover {
   background-color: var(--violet-);
 }
@@ -142,3 +186,6 @@ h3.schedule__date__ {
   text-align: center;
   background-color: var(--violet-);
 }
+
+
+
