@@ -5,6 +5,6 @@
 
 .hero__title {
   font-family: "Ultra", serif;
-  color: #ff69b4;
+  color: var(--rose);
   font-size: 36px;
 }

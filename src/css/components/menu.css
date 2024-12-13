@@ -25,10 +25,11 @@ p {
   position: fixed;
   inset: 0;
   z-index: 1;
-  background-color: #331137;
+  background-color: var(--violet-);
   color: white;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Ultra", serif;
 
   transform: translateX(100vw);
   transition: all 0.3s ease-in-out;
@@ -39,10 +40,41 @@ p {
 }
 
 .menu__link {
-  color: white;
+  font-family: "Ultra", serif;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--rose);
   display: block;
+  transition: color 0.3s ease;
+}
+
+.menu__list .menu__item:nth-child(1) .menu__link {
+  color: var(--rose-);
+}
+
+.menu__list .menu__item:nth-child(2) .menu__link {
+  color: var(--vert-);
+}
+
+.menu__list .menu__item:nth-child(3) .menu__link {
+  color: var(--orange-);
+}
+
+.menu__list .menu__item:nth-child(4) .menu__link {
+  color: var(--rose-);
+}
+
+.menu__list .menu__item:nth-child(5) .menu__link {
+  color: var(--vert-);
+}
+
+.menu__list .menu__item:nth-child(6) .menu__link {
+  color: var(--orange-);
+}
+
+.menu__link:hover {
+  text-decoration: underline;
 }
 
 .menu-btn {
@@ -58,7 +90,7 @@ p {
 .menu-btn__bar::before,
 .menu-btn__bar::after {
   content: "";
-  background: rgb(255, 5, 226);
+  background: var(--rose-);
   height: 2px;
   width: 100%;
   position: absolute;
@@ -97,36 +129,10 @@ Ne pas oublier d'ajouter une transition plus haut pour l'animation */
   width: 100%;
 }
 
-/* Menu Principal */
-/* .menu {
-  background-color: #331137;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.menu__close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ff69b4;
-  cursor: pointer;
-}
-
-.menu__close-btn:hover {
-  color: #67e344; 
-
 .menu__list {
   display: flex;
   flex-direction: column;
-  gap: 30px; 
+  gap: 30px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -144,42 +150,3 @@ Ne pas oublier d'ajouter une transition plus haut pour l'animation */
 .menu__item {
   margin: 10px 0;
 }
-
-.menu__link {
-  font-family: "Ultra", serif;
-  text-decoration: none;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #ff69b4; 
-  display: block;
-  transition: color 0.3s ease;
-}
-
-
-.menu__list .menu__item:nth-child(1) .menu__link {
-  color: #ff69b4; 
-}
-
-.menu__list .menu__item:nth-child(2) .menu__link {
-  color: #67e344; 
-}
-
-.menu__list .menu__item:nth-child(3) .menu__link {
-  color: #ff914c;
-}
-
-.menu__list .menu__item:nth-child(4) .menu__link {
-  color: #ff69b4; 
-}
-
-.menu__list .menu__item:nth-child(5) .menu__link {
-  color: #67e344; 
-}
-
-.menu__list .menu__item:nth-child(6) .menu__link {
-  color: #ff914c; 
-}
-
-.menu__link:hover {
-  text-decoration: underline;
-} */
