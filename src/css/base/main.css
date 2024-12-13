@@ -91,6 +91,7 @@ textarea {
 h2.hero__title {
   font-family: "Ultra", serif; /* Utilise la police Ultra */
   color: var(--rose-);
+  background-color: var(--violet-);
 }
 
 p.films-intro__description {
@@ -134,4 +135,12 @@ h3.schedule__date__ {
   color: var(--violet-);
   font-size: 20px;
   text-align: center;
+}
+
+.hero__ptitle {
+  font-family: "Ultra", serif; /* Utilise la police Ultra */
+  color: var(--vert-);
+  font-size: 36px;
+  text-align: center;
+  background-color: var(--violet-);
 }
